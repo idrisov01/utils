@@ -109,7 +109,7 @@ class DividerItemDecorator private constructor(
      */
     class Builder {
 
-        private var orientation: Int = 0
+        private var orientation: Int = LinearLayoutManager.VERTICAL
         private var itemOffset: Int = 0
         private var dividerColor: Int = Color.TRANSPARENT
         private var dividerWidth: Int = 1
@@ -118,7 +118,7 @@ class DividerItemDecorator private constructor(
 
         /**
          * Устанавливает значение ориентации.
-         * @param orientation значение ориентации. [LinearLayoutManager.VERTICAL] или [LinearLayoutManager.HORIZONTAL]
+         * @param orientation значение ориентации. [LinearLayoutManager.VERTICAL] или [LinearLayoutManager.HORIZONTAL]. По умолчанию [LinearLayoutManager.VERTICAL]
          */
         fun setOrientation(orientation: Int): Builder {
             this.orientation = orientation
